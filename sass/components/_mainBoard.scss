@@ -1,0 +1,10 @@
+.mainBoard {
+    padding: 2rem 4rem 0 4rem;
+
+    &>h1>span {
+        color: $colorPrimary;
+    }
+    &__bankImage {
+        float: right;
+    }
+}

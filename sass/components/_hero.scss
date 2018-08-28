@@ -1,0 +1,44 @@
+.hero {
+    width: 100%;
+    height: 430px;
+    background-image: linear-gradient( to right, rgba(108,120,140, .3), rgba(57,57,58, 0.4)), url(../img/harpsOnlyEdit.jpg);
+    background-size: cover;
+    position: relative;
+
+    //logo stylings found in layout/_navigation.scss
+
+    &__mainTitle {
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: $colorGrey-light1;
+        &--mainHeading {
+            font-weight: 300;
+            letter-spacing: 3px;
+            font-size:70px;
+            @include respond(phone) {
+                font-size: 120%;
+                font-weight: 400;
+            }
+        }
+
+        &--subHeading {
+            margin-top: 15px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            font-size: 50px;
+            color: $colorGrey-light1;
+            
+            &>span {
+                font-style: italic;
+                font-weight: bold;
+            }
+            @include respond(phone) {
+                font-size: 145%;
+            }
+        }
+    }
+}
