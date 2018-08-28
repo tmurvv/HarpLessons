@@ -19,7 +19,7 @@
             Tisha Murvihill
         </h1>
         <h2 class="hero__mainTitle--subHeading">
-            Harp Teacher <span>Extraordinaire</span>
+            Harp Teacher <br><span>Calgary, Alberta, Canada</span>
         </h2>
     </div>
 </div>

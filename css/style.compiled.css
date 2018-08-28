@@ -26,7 +26,7 @@ hr:last-child {
   opacity: 0; }
 
 img {
-  border-radius: 7px; }
+  border-radius: 1.5%; }
 
 @media only screen and (max-width: 75em) {
   font-size: 56.25%; }
@@ -51,19 +51,19 @@ body {
     padding: 3px 5px; }
   .btn__primary {
     background-color: #4c88ce;
-    color: #fff9e9; }
+    color: #dfebfc; }
   .btn__secondary {
     background-color: #D9AE5C;
-    color: #fff9e9; }
+    color: #dfebfc; }
   .btn__secondary > p {
     background-color: #D9AE5C;
-    color: #fff9e9; }
+    color: #dfebfc; }
   .btn__danger {
     background-color: #ff3300;
-    color: #fff9e9; }
+    color: #dfebfc; }
   .btn__primaryVeryDark {
     background-color: #A43C3D;
-    color: #fff9e9; }
+    color: #dfebfc; }
   .btn__small {
     font-size: 9px; }
   .btn__shadow {
@@ -269,13 +269,13 @@ header {
   .menus__addNav--container-item {
     flex: 1;
     text-align: center;
-    border: 1px solid #fff9e9; }
+    border: 1px solid #dfebfc; }
     @media only screen and (max-width: 56.25em) {
       .menus__addNav--container-item {
         padding: 11px 8px; } }
     .menus__addNav--container-item > a {
       text-decoration: none;
-      color: #fff9e9; }
+      color: #dfebfc; }
       .menus__addNav--container-item > a:hover, .menus__addNav--container-item > a:active {
         transform: scale(1.2); }
 
@@ -288,44 +288,78 @@ header {
 .hero {
   width: 100%;
   height: 430px;
-  background-image: linear-gradient(to right, rgba(108, 120, 140, 0.3), rgba(57, 57, 58, 0.4)), url(../img/harpsOnlyEdit.jpg);
+  background-image: linear-gradient(to right, rgba(108, 120, 140, 0.4), rgba(57, 57, 58, 0.5)), url(../img/harpsOnlyEdit.jpg);
   background-size: cover;
+  background-position: center;
   position: relative; }
   .hero__mainTitle {
-    width: 100%;
+    width: 80%;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff9e9; }
+    color: #dfebfc; }
     .hero__mainTitle--mainHeading {
-      font-weight: 300;
-      letter-spacing: 3px;
-      font-size: 70px; }
+      font-weight: 400;
+      letter-spacing: 3px; }
       @media only screen and (max-width: 37.5em) {
         .hero__mainTitle--mainHeading {
           font-size: 120%;
           font-weight: 400; } }
     .hero__mainTitle--subHeading {
-      margin-top: 15px;
-      font-weight: 400;
+      font-weight: 300;
       letter-spacing: 3px;
-      font-size: 50px;
-      color: #fff9e9; }
+      font-size: 2rem;
+      color: #fafbff; }
       .hero__mainTitle--subHeading > span {
         font-style: italic;
-        font-weight: bold; }
+        font-weight: 300;
+        font-size: 80%;
+        color: #dfebfc; }
       @media only screen and (max-width: 37.5em) {
         .hero__mainTitle--subHeading {
           font-size: 145%; } }
 
-.mainBoard {
-  padding: 2rem 4rem 0 4rem; }
-  .mainBoard > h1 > span {
+.main {
+  margin: 2rem; }
+  .main > h1 > span {
     color: #4c88ce; }
-  .mainBoard__bankImage {
-    float: right; }
+  .main__image > img {
+    margin: 1rem; }
+  .main__collage {
+    display: flex;
+    justify-content: space-between; }
+  .main__image--hands > img {
+    margin-top: 1rem;
+    float: right;
+    width: 35%; }
+  .main__image--karen > img {
+    float: left;
+    width: 25%; }
+  .main__image--lauren > img {
+    float: right;
+    width: 25%; }
+  .main__image--alita > img {
+    width: 95%; }
+  .main__image--dawn > img {
+    margin-bottom: .5rem;
+    width: 95%; }
+  .main__image--laurentries > img {
+    margin-bottom: .5rem;
+    width: 95%; }
+  .main__image--skype > img {
+    width: 95%; }
+  .main h1,
+  .main h3,
+  .main h4 {
+    font-weight: 400; }
+  .main h3 {
+    font-style: italic; }
+  .main h4 {
+    font-size: 138%; }
+  .main ul {
+    list-style-position: inside; }
 
 .about__container {
   width: 100%;
@@ -528,7 +562,7 @@ header {
   padding: 5px 10px;
   border: 7px double white;
   box-shadow: 2px 5px #eee;
-  color: #fff9e9;
+  color: #dfebfc;
   width: auto;
   text-align: center;
   margin-bottom: 2.5rem;
@@ -562,7 +596,7 @@ header {
     box-shadow: 2px 5px #eee;
     border-radius: 7px;
     text-align: center;
-    color: #fff9e9;
+    color: #dfebfc;
     margin-right: 25px; }
   .deleteJob > a {
     text-decoration: none;

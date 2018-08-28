@@ -1,0 +1,60 @@
+.main {
+    margin: 2rem;
+    
+    &>h1>span {
+        color: $colorPrimary;
+    }
+    &__image>img {
+        margin: 1rem;
+    }
+    &__collage {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__image {
+        &--hands>img{
+            margin-top: 1rem;
+            float: right;
+            width: 35%;
+        }
+        &--karen>img {
+            float: left;
+            width: 25%;
+        }
+        &--lauren>img {
+            float: right;
+            width: 25%;
+        }
+        &--alita>img {          
+            width: 95%;
+        }
+        &--dawn>img {
+            margin-bottom: .5rem;
+            width: 95%;
+        }
+        &--laurentries>img {
+            margin-bottom: .5rem;
+            width: 95%;
+        }
+        &--skype>img {
+            
+            width: 95%;
+        }
+    }
+    
+    h1,
+    h3,
+    h4 {
+        font-weight: 400;
+    }
+    h3 {
+        font-style: italic;
+    }
+    h4 {
+        font-size: 138%;
+    }
+
+    ul {
+        list-style-position: inside;
+    }
+}
