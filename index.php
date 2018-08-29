@@ -33,8 +33,10 @@
         <br>
         <h4>Qualifications</h4>
         <p>I have a Master's degree in Music Performance from Indiana University School of Music under
-            Distinguished Professor Susann McDonald. I have been the Principal Harpist of the Calgary Philharmonic
-            Orchestra since 1995 and have been teaching privately for many years. </p>
+            Distinguished Professor Susann McDonald. I have been the Principal Harpist of the <a href="https://www.calgaryphil.com" target="_blank">
+                Calgary Philharmonic
+                Orchestra
+            </a> since 1995 and have been teaching privately for many years. </p>
         <br>
         <br>
         <div class="main__image main__image--lauren">
@@ -68,14 +70,15 @@
                 </figure>
             </div>
         </div>
+    </div>
 
-        <!-- Contact -->
-        <section id="contact">
-            <?php include 'php/reusables/about.php' ?>
-        </section>
-        <!-- FOOTER -->
-        <section>
-            <?php include 'php/reusables/footer.php' ?>
-        </section>
+    <!-- Contact -->
+    <section id="contact">
+        <?php include 'php/reusables/about.php' ?>
+    </section>
+    <!-- FOOTER -->
+    <section>
+        <?php include 'php/reusables/footer.php' ?>
+    </section>
 
 </body>

@@ -5,10 +5,7 @@
                     <a href="#top">Home</a>
                 </li>
                 <li>
-                    <a href="#jobs">Job Listings</a>
-                </li>
-                <li>
-                    <a href="#search">Search</a>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li>
                     <a href="#about">About</a>

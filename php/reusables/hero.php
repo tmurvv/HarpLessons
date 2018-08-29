@@ -1,5 +1,5 @@
 <div class="hero" id='home'>
-    <img class="hero__logo" src="img/logoAllowance.gif" alt="Tech Logo">
+    <img class="hero__logo" src="img/logoharpsite.gif" alt="Tech Logo">
     <ul class="hero__mainNav js--mainNav">
         <li class="hero__mainNav--item">
             <a href="index.php">Home</a>

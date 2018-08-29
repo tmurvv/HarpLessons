@@ -1,6 +1,7 @@
 .about {
     &__container {
         width: 100%;
+        background-color: #f8f8ed;
         margin: 0 auto;
         padding-top: 1.5rem;
         &>p {
@@ -39,7 +40,6 @@
         }
        
         &--thisWebsite {
-            background-color: #e7e7e7;
             padding-top: 1.5rem;
             &>p {
                 

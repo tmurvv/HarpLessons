@@ -1,9 +1,8 @@
 .hero {
     width: 100%;
     height: 430px;
-    background-image: linear-gradient( to right, rgba(108,120,140, .4), rgba(57,57,58, 0.5)), url(../img/harpsOnlyEdit.jpg);
+    background-image: linear-gradient( to right, rgba(11,8,8, .3), rgba(11,8,8, 0.4)), url(../img/headHarpsLightenCrop2.jpg);
     background-size: cover;
-    background-position: center;
     position: relative;
 
     //logo stylings found in layout/_navigation.scss
@@ -18,8 +17,10 @@
         color: $colorGrey-light1;
 
         &--mainHeading {
-            font-weight: 400;
-            letter-spacing: 3px;
+            font-weight: 300;
+            letter-spacing: .8rem;
+            font-size: 350%;
+            word-spacing: .8rem;
 
             @include respond(phone) {
                 font-size: 120%;
@@ -32,14 +33,11 @@
             font-weight: 300;
             letter-spacing: 3px;
             font-size: 2rem;
-            color: #fafbff;
                       
             &>span {
                 font-style: italic;
                 font-weight: 300;
-                font-size: 80%;
-                color: $colorGrey-light1;
-                
+                font-size: 80%;               
             }
             @include respond(phone) {
                 font-size: 145%;
