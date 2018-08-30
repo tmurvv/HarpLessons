@@ -104,6 +104,9 @@ body {
   @media only screen and (max-width: 37.5em) {
     .footer {
       padding: 1rem 1rem; } }
+  .footer__aboutSite {
+    color: #888;
+    font-size: 70%; }
   .footer__topRow {
     display: flex;
     justify-content: space-between; }
@@ -162,6 +165,10 @@ body {
     @media only screen and (max-width: 56.25em) {
       .footer__copy {
         font-size: 90%; } }
+  .footer hr {
+    background-image: -webkit-linear-gradient(left, rgba(130, 100, 82, 0.2), rgba(130, 100, 82, 0.8), rgba(130, 100, 82, 0.2)); }
+  .footer a {
+    color: #9d7964; }
 
 header {
   background-image: url("");
@@ -289,7 +296,7 @@ header {
 .hero {
   width: 100%;
   height: 430px;
-  background-image: linear-gradient(to right, rgba(11, 8, 8, 0.3), rgba(11, 8, 8, 0.4)), url(../img/headHarpsLightenCrop2.jpg);
+  background-image: linear-gradient(to right, rgba(41, 32, 16, 0.4), rgba(41, 32, 16, 0.4)), url(../img/headHarpsLightenCrop2.jpg);
   background-size: cover;
   position: relative; }
   .hero__mainTitle {
@@ -323,33 +330,80 @@ header {
 
 .main {
   margin: 2rem; }
+  .main > ul {
+    margin-top: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      margin: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .main > h1 {
+      font-size: 160%; } }
   .main > h1 > span {
     color: #C4977C; }
   .main__image > img {
     margin: 1rem; }
   .main__collage {
     display: flex;
+    width: 100%;
     justify-content: space-between; }
   .main__image--hands > img {
     margin-top: 1rem;
     float: right;
+    filter: brightness(125%);
     width: 35%; }
-  .main__image--karen > img {
+    @media only screen and (max-width: 37.5em) {
+      .main__image--hands > img {
+        width: 40%; } }
+  .main__image--laurentries > img {
+    width: 25%;
     float: left;
-    width: 25%; }
+    margin-top: 2.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .main__image--laurentries > img {
+        float: none;
+        width: 65%;
+        margin-left: 0; } }
+  .main__image--dawn > img {
+    width: 25%;
+    float: right;
+    margin-top: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .main__image--dawn > img {
+        float: none;
+        width: 65%;
+        margin-left: 0; } }
+  .main__image--alita > img {
+    width: 95%;
+    margin: 2rem 0; }
+    @media only screen and (max-width: 37.5em) {
+      .main__image--alita > img {
+        width: 90%; } }
+  .main__image--karen > img {
+    float: right;
+    width: 95%;
+    margin-top: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .main__image--karen > img {
+        margin-bottom: .5rem;
+        width: 90%; } }
   .main__image--lauren > img {
     float: right;
-    width: 25%; }
-  .main__image--alita > img {
     width: 95%; }
-  .main__image--dawn > img {
-    margin-bottom: .5rem;
-    width: 95%; }
-  .main__image--laurentries > img {
-    margin-bottom: .5rem;
-    width: 95%; }
+    @media only screen and (max-width: 37.5em) {
+      .main__image--lauren > img {
+        margin-bottom: .5rem;
+        margin-top: 0;
+        width: 90%; } }
   .main__image--skype > img {
-    width: 95%; }
+    width: 95%;
+    float: right;
+    margin-left: 0; }
+    @media only screen and (max-width: 37.5em) {
+      .main__image--skype > img {
+        margin-top: 0;
+        width: 90%; } }
+    .main__image--skype > img > p {
+      padding-left: 5%; }
   .main h1,
   .main h3,
   .main h4 {
@@ -357,7 +411,11 @@ header {
   .main h3 {
     font-style: italic; }
   .main h4 {
-    font-size: 138%; }
+    font-size: 138%;
+    margin-top: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .main h4 {
+        margin-top: inherit; } }
   .main ul {
     list-style-position: inside; }
 
@@ -419,24 +477,12 @@ header {
       margin-top: 1.5rem; }
 
 .contact {
-  font-size: .8rem;
   line-height: normal;
-  background-color: #f8f8ed;
-  padding: 0 10%; }
-  .contact__campusInfo {
-    text-align: center;
-    display: flex;
-    justify-content: space-around; }
-    @media only screen and (max-width: 37.5em) {
-      .contact__campusInfo {
-        font-size: 14px; } }
-    .contact__campusInfo--campus {
-      padding: 3px;
-      text-align: center; }
-      .contact__campusInfo--campus-line1 {
-        font-weight: 600; }
+  background-color: #ffffff;
+  padding: 0 10%;
+  margin-bottom: 3rem;
+  text-align: center; }
   .contact h2 {
-    text-align: center;
     margin: 0 auto; }
     .contact h2:after {
       display: block;

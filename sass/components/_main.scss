@@ -1,44 +1,110 @@
 .main {
     margin: 2rem;
-    
-    &>h1>span {
-        color: $colorPrimary;
+
+    &>ul {
+        margin-top: 1rem;
     }
+    @include respond(phone) {
+        margin: 1rem;
+    }
+
+    &>h1 {
+        @include respond(phone) {
+            font-size: 160%;
+        }
+
+        &>span {
+            color: $colorPrimary;       
+        }
+    }
+    
     &__image>img {
         margin: 1rem;
     }
     &__collage {
         display: flex;
+        width: 100%;
         justify-content: space-between;
     }
     &__image {
         &--hands>img{
             margin-top: 1rem;
-            float: right;
+            float: right;           
+            filter: brightness(125%);
             width: 35%;
+
+            @include respond(phone) {
+                width: 40%;
+            }
+            
         }
-        &--karen>img {
-            float: left;
+
+        &--laurentries>img {
+            width: 25%; 
+            float:left;
+            margin-top: 2.5rem;   
+            
+            @include respond(phone) {
+                float: none;
+                width: 65%;
+                margin-left: 0;
+            }
+        }
+
+        &--dawn>img {
             width: 25%;
+            float: right;
+            margin-top: 3rem; 
+
+            @include respond(phone) {
+                float: none;
+                width: 65%;
+                margin-left: 0;
+            }
+        }
+
+        &--alita>img {          
+            width: 95%;
+            margin: 2rem 0;
+
+            @include respond(phone) {
+                width: 90%;
+            }
+        }
+
+        &--karen>img {
+            float: right;
+            width: 95%;
+            margin-top:2rem;
+            @include respond(phone) {
+                margin-bottom: .5rem;
+                width: 90%;
+            }
+           
         }
         &--lauren>img {
             float: right;
-            width: 25%;
+            width: 95%; 
+            @include respond(phone) {
+                margin-bottom: .5rem;
+                margin-top: 0;
+                width: 90%;
+            }          
         }
-        &--alita>img {          
-            width: 95%;
-        }
-        &--dawn>img {
-            margin-bottom: .5rem;
-            width: 95%;
-        }
-        &--laurentries>img {
-            margin-bottom: .5rem;
-            width: 95%;
-        }
+               
         &--skype>img {
-            
             width: 95%;
+            float: right;
+            margin-left: 0;
+
+            @include respond(phone) {
+                margin-top: 0;
+                width: 90%;
+            }
+
+            &>p {
+                padding-left: 5%;
+            }
         }
     }
     
@@ -52,6 +118,10 @@
     }
     h4 {
         font-size: 138%;
+        margin-top: 2rem;
+        @include respond(phone) {
+            margin-top: inherit;
+        }
     }
 
     ul {

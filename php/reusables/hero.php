@@ -5,7 +5,7 @@
             <a href="index.php">Home</a>
         </li>
         <li class="hero__mainNav--item">
-            <a href="index.php#contact">About</a>
+            <a href="index.php#about">About</a>
         </li>
         <li class="hero__mainNav--item">
             <a href="index.php#contact">Contact</a>

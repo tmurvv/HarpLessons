@@ -1,26 +1,11 @@
 .contact {
-    font-size: .8rem;
     line-height: normal;
-    background-color: #f8f8ed;
+    background-color: #ffffff;
     padding: 0 10%;
+    margin-bottom: 3rem;
+    text-align: center;
 
-    &__campusInfo {
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        @include respond(phone) {
-            font-size: 14px;
-        }
-        &--campus {
-            padding: 3px;
-            text-align: center;
-            &-line1 {
-                font-weight: 600;
-            }
-        }
-    }
     & h2 {
-        text-align: center;
         margin: 0 auto;
         &:after {
             display: block;

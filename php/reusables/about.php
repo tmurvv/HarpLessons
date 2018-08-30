@@ -28,17 +28,7 @@
                 <br><br>Ms. Murvihill holds a Master’s Degree in harp performance from Indiana University where she
                 studied under Distinguished Professor Susann McDonald and won the prestigious concerto competition.
             </p>
-            <br>
-            <br>
-            <h2>About this website</h2>
-            <p>This website was created by the same 
-                <a href="https://www.linkedin.com/in/tisha-murvihill-tech" target="_blank">Tisha Murvihill</a>, also a
-                graduate of
-                <a href="https://www.innotechcollege.com" target="_blank">InnoTech College</a> in Calgary, Alberta,
-                Canada. The layout is fully responsive and is coded in HTML5, CSS, and JavaScript.
-                This site keeps things sleek, simple, and fast by using only PHP and SQL for content management (no
-                WordPress et al.). For web development inquiries, Tisha can be reached at
-                <a href="http://www.take2tech.ca" target="_blank">tech@take2tech.ca</a>.</p>
+            
         </div>
     </div>
 </section>

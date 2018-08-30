@@ -4,6 +4,10 @@
     @include respond(phone) {
         padding: 1rem 1rem;
     }
+    &__aboutSite {
+        color: #888;
+        font-size: 70%;
+    }
     &__topRow {
         display: flex;
         justify-content: space-between;
@@ -78,5 +82,13 @@
         @include respond(portrait) {
             font-size: 90%;           
         }
+    }
+
+    & hr {
+        background-image: -webkit-linear-gradient(left, rgba(130,100,82,.2), rgba(130,100,82,0.8), rgba(130,100,82,.2));
+    }
+
+    & a {
+        color:$colorPrimary-dark;
     }
 }
