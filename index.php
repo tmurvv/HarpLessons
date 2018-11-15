@@ -9,7 +9,7 @@
 
     <div class="main" id="jobs">
         <div class="main__image main__image--hands">
-            <img src="img/tishaHands.jpg" alt="Image Tisha's Technique">
+            <!-- <img src="img/tishaHands.jpg" alt="Image Tisha's Technique"> -->
         </div>
         <h1>Harp Lessons with <span>Tisha Murvihill</span></h1>
 

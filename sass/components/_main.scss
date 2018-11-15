@@ -27,12 +27,15 @@
         justify-content: space-between;
     }
     &__image {
-        &--hands>img{
-            margin-top: 1rem;
-            float: right;           
-            filter: brightness(125%);
+        &--hands{
             width: 35%;
-
+            height: 415px;
+            background-image: linear-gradient(to right, rgba(41,32,16,0.2), rgba(41,32,16,0.2)), url(../img/tishaHandsSepia.jpg);
+            background-size: cover;
+            margin-top: 1rem;
+            float: right;
+            border-radius: 7px;          
+            
             @include respond(phone) {
                 width: 40%;
             }

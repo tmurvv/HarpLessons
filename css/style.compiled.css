@@ -346,13 +346,16 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between; }
-  .main__image--hands > img {
+  .main__image--hands {
+    width: 35%;
+    height: 415px;
+    background-image: linear-gradient(to right, rgba(41, 32, 16, 0.2), rgba(41, 32, 16, 0.2)), url(../img/tishaHandsSepia.jpg);
+    background-size: cover;
     margin-top: 1rem;
     float: right;
-    filter: brightness(125%);
-    width: 35%; }
+    border-radius: 7px; }
     @media only screen and (max-width: 37.5em) {
-      .main__image--hands > img {
+      .main__image--hands {
         width: 40%; } }
   .main__image--laurentries > img {
     width: 25%;
