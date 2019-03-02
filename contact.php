@@ -1,14 +1,22 @@
 <?php
+    session_start();
     include 'config.php';
     
     if (isset($_POST['submit'])) {
-        $result = '';
+        $_SESSION['result'] = '';
         if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['g-recaptcha-response'])) {
-                
+            
+            $inputName = '';
+            $inputEmail = '';
+            $inputPhone = '';
+            $inputMessage = '';
+
             // Build POST request:
             $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-            $recaptchaSecretKey = "6LeoRpMUAAAAADkbw8MI_ihoZX4akfg6twRiSD6I";
-            $recaptcha_response = $_POST['g-recaptcha-response'];
+            $recaptchaSecretKey = "6LeuDJUUAAAAANUtN4bxxySC_yLpVGi4Sj1Oldsg";
+            if (isset($_POST['g-recaptcha-response'])) {
+                $recaptcha_response = $_POST['g-recaptcha-response'];
+            }          
         
             // Make and decode POST request: $recaptchaSecretKey from config.php file
             $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptchaSecretKey . '&response=' . $recaptcha_response);
@@ -18,42 +26,50 @@
             if (isset($recaptcha->score) && $recaptcha->score >= 0.5) {
                 // Verified - send email
                 
-                $inputName = $_POST['name'];
-                $inputEmail = $_POST['email'];
-                $inputPhone = $_POST['phone'];
-                $inputMessage = $_POST['message'];
-        
+                if (isset($_POST['name'])) {
+                    $inputName = $_POST['name'];
+                }
+                if (isset($_POST['email'])) {
+                    $inputEmail = $_POST['email'];
+                }
+                if (isset($_POST['phone'])) {
+                    $inputPhone = $_POST['phone'];
+                }
+                if (isset($_POST['message'])) {
+                    $inputMessage = $_POST['message'];
+                }
+       
                 $mail_body = '<html>
                 <body style="font-family: Arial, Helvetica, sans-serif;
                                     line-height:1.8em;">
-                <p>Hello '.$siteEmailRecipient.', <br> A message with the following information was sent via the contact form on the J.Dolan Stories website:</p>
+                <p>Hello '.$siteEmailRecipient.', <br> A message with the following information was sent via the contact form on the harptisha.com website:</p>
                 <p>Name: '.$inputName.'<br>
                 Email: '.$inputEmail.'<br>
                 Phone: '.$inputPhone.'<br>
                 Message: '.$inputMessage.'<br>
                 <br>
                 Have a nice day!<br>
-                J.Dolan Stories
+                harptisha.com
                 </p>
                 </body>
                 </html>';
             
-                $subject = "Message from jdolanstories.com contact form";
-                $headers = "From: jdolanstories.com" . "\r\n";
+                $subject = "Message from harptisha.com contact form";
+                $headers = "From: harptisha.com" . "\r\n";
                 $headers .= "MIME-Version: 1.0" . "\r\n";
                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                 
                 //Error Handling for PHPMailer
                 if(!mail($email, $subject, $mail_body, $headers)){
-                    $result = "Email failed to send.";
+                    $_SESSION['result'] = "Email failed to send.";
                 }
                 else{
-                    $result = "Email sent!";
+                    $_SESSION['result'] = "Email sent!";
                 }
                        
             } else {
                 // Not verified - show form error
-                $result = 'Form failed to send. Please call or message Ron at 503-240-7144.';
+                $_SESSION['result'] = 'Form failed to send. Please email harp@harptisha.com.';
             }      
         }
     }    
@@ -62,10 +78,10 @@
 <html lang="en">
 <head>
     <!-- Google reCaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LeoRpMUAAAAAEGwl3c_kDlGgFl9t1LzOm4ECVe0"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeuDJUUAAAAACYDCS8QxDSVOcRelxucr2sKq8E2"></script>
     <script>
         grecaptcha.ready(function() {
-            grecaptcha.execute('6LeoRpMUAAAAAEGwl3c_kDlGgFl9t1LzOm4ECVe0', {action: 'homepage'}).then(function(token) {
+            grecaptcha.execute('6LeuDJUUAAAAACYDCS8QxDSVOcRelxucr2sKq8E2', {action: 'homepage'}).then(function(token) {
                 // pass the token to the backend script for verification
 
                 // add token value to form for PHP verification
@@ -101,7 +117,7 @@
         <div class="contact__form">
             <form action="contact.php" name='submit' method="post" id='recaptchaForm'>
                 <div class="contact__form--title">
-                    <?php if(isset($result)) {echo $result.'<br>'; unset($result);} else {echo '<p>Contact Tisha</p>';} ?> 
+                    <?php if(isset($_SESSION['result'])) {echo $_SESSION['result'].'<br>'; unset($_SESSION['result']);} else {echo '<p>Contact Tisha</p>';} ?> 
                 </div>
                 
                 <div class="contact__form--userInputs">
