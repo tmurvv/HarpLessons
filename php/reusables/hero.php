@@ -8,7 +8,7 @@
             <a href="index.php#about">About</a>
         </li>
         <li class="hero__mainNav--item">
-            <a href="index.php#contact">Contact</a>
+            <a href="contact.php">Contact</a>
         </li>
     </ul>
     <a class="hero__hamburger js--mainNav-icon"><i class="fas fa-bars"></i></a>

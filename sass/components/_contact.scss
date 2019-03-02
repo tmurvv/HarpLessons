@@ -1,20 +1,133 @@
-.contact {
-    line-height: normal;
-    background-color: #ffffff;
-    padding: 0 10%;
-    margin-bottom: 3rem;
-    text-align: center;
+// .contact {
+//     line-height: normal;
+//     background-color: #ffffff;
+//     padding: 0 10%;
+//     margin-bottom: 3rem;
+//     text-align: center;
 
-    & h2 {
-        margin: 0 auto;
-        &:after {
-            display: block;
-            height: 2px;
-            background-color: $colorPrimary;
-            content: ' ';
-            width: 100px;
-            margin: 0 auto;
-            margin-top: 30px;
+//     & h2 {
+//         margin: 0 auto;
+//         &:after {
+//             display: block;
+//             height: 2px;
+//             background-color: $colorPrimary;
+//             content: ' ';
+//             width: 100px;
+//             margin: 0 auto;
+//             margin-top: 30px;
+//         }
+//     }
+// }
+
+.contact {
+    border: 1px solid #333333;
+    border-radius: 7px;
+    margin: 75px auto;
+    padding: 20px; 
+    width: fit-content;
+    background-color: #e8dfcc;
+
+    &__text {
+        position: absolute;
+        color: white;
+        width: 285px;
+        top: 264px;
+        left: 50px;
+        font-size: 16px;
+        font-family: 'Josefin Slab', serif;
+        text-align: center;
+        @include respond(portrait900) {
+            top: 13%;
+            left: 10%;
+            width: 40%;
+        }
+        @include respond(phone) {
+            position: static;
+            margin: auto;
+            padding-top: 50px;
+            width: 267px;
         }
     }
+    &__form {
+        background-color: #fcfcfc;
+        width: fit-content;
+        height: fit-content;
+        border: 1px solid #333333;
+        border-radius: 7px;
+
+        @include respond(phone) {
+            position: static;
+            margin: 50px auto;
+        }
+
+        &--title {
+            background-color: #ddd;
+            padding: 5px 3px;
+            font-size: 21px;
+            border-radius: 7px 7px 0 0;
+        }
+        &--userInputs {           
+            padding: 20px 10px;
+            line-height: 2;
+            background-color: transparent;
+
+            & div {
+                width: 100%;
+                display: flex;
+                justify-content: stretch;  
+            }
+            & label {
+                flex: 2;
+                text-align: right;
+                margin-right: 3px;
+            }
+            & input {
+                flex: 8;
+                margin: 3px;
+                padding: 2px;
+            }
+            & textarea {
+                width: 100%;
+            }
+            & input,
+            & textarea {
+                border-radius: 7px;
+                font-size: 16px;
+            }   
+            & button {
+                border-radius: 7px;
+                font-size: 20px;
+                display: block;
+                margin: 0 auto;
+                padding: 3px 10px;
+            }
+        }       
+    }
+    &__phone {
+        margin-bottom: 25px;
+        font-family: 'Josefin Slab', serif;
+        font-size: 21px;
+        font-weight: 600;
+
+        @include respond(portrait900) {
+            bottom: 95px;      
+        }
+        @include respond(phone) {
+            position: static;
+            margin: 50px 20%;
+            text-align: center;        
+        }
+    }
+    
 }
+
+//reCaptcha
+.g-recaptcha {
+    transform:scale(0.81);
+    -webkit-transform:scale(0.81);  
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+
+    right: 0 !important;
+}
+
