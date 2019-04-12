@@ -1,3 +1,9 @@
-Responsive
-Check photo resolution
+##use /selfstudy/intersectobserver for template
+
+-put images on cloudinary with large and small resolution
+-lazy load images
+-Finish contact form
+
+-get rid of jQuery
+-get rid of extra PHP code
 

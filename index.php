@@ -24,7 +24,7 @@
             <li><a href="mailto:harp@harptisha.com">harp@harptisha.com</a> for more info</li>
         </ul>
         <div class="main__image main__image--laurentries">
-            <img src="img/laurenTriesIt.jpg" alt="Lauren tries it.">
+            <img src="img/laurenTriesIt.jpg" data-src= "logo.gif" alt="Lauren tries it.">
         </div>
         <h4>Qualifications</h4>
         <p>I have a Master's degree in Music Performance from Indiana University School of Music under
@@ -43,9 +43,12 @@
             make that happen. Email <a href="mailto:harp@harptisha.com">harp@harptisha.com</a> for more info.</p>
         <div class="main__collage">
             <div>
-                <div class="main__image main__image--alita">
+                <!-- <div class="main__image main__image--alita">
                     <img src="img/alitaHairFix.jpg" alt="Tisha teaches Alita">
-                </div>
+                </div> -->
+                <img src="img/logo.gif"
+            data-src="img/alitaHairFix.jpg"
+            alt="">
             </div>
             <div>
                 <div class="main__image main__image--karen">

@@ -296,7 +296,7 @@ header {
 .hero {
   width: 100%;
   height: 430px;
-  background-image: linear-gradient(to right, rgba(41, 32, 16, 0.4), rgba(41, 32, 16, 0.4)), url(../img/headHarpsLightenCrop2.jpg);
+  background-image: linear-gradient(to right, rgba(41, 32, 16, 0.2), rgba(41, 32, 16, 0.4)), url(../img/headHarpsCrop2AdjustColor.jpg);
   background-size: cover;
   position: relative; }
   .hero__mainTitle {
@@ -308,8 +308,8 @@ header {
     text-align: center;
     color: #fbf2ff; }
     .hero__mainTitle--mainHeading {
-      font-weight: 300;
-      letter-spacing: .8rem;
+      font-weight: 400;
+      letter-spacing: .6rem;
       font-size: 350%;
       word-spacing: .8rem; }
       @media only screen and (max-width: 37.5em) {
@@ -317,12 +317,12 @@ header {
           font-size: 120%;
           font-weight: 400; } }
     .hero__mainTitle--subHeading {
-      font-weight: 300;
+      font-weight: 400;
       letter-spacing: 3px;
       font-size: 2rem; }
       .hero__mainTitle--subHeading > span {
         font-style: italic;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 80%; }
       @media only screen and (max-width: 37.5em) {
         .hero__mainTitle--subHeading {
@@ -349,7 +349,7 @@ header {
   .main__image--hands {
     width: 35%;
     height: 415px;
-    background-image: linear-gradient(to right, rgba(41, 32, 16, 0.2), rgba(41, 32, 16, 0.2)), url(../img/tishaHandsSepia.jpg);
+    background-image: url("../img/tishaHandsAdjustColor.jpg");
     background-size: cover;
     margin-top: 1rem;
     float: right;
@@ -484,7 +484,8 @@ header {
   border-radius: 7px;
   margin: 75px auto;
   padding: 20px;
-  width: fit-content; }
+  width: fit-content;
+  background-color: #e8dfcc; }
   .contact__text {
     position: absolute;
     color: white;
@@ -492,7 +493,8 @@ header {
     top: 264px;
     left: 50px;
     font-size: 16px;
-    font-family: 'Josefin Slab', serif; }
+    font-family: 'Josefin Slab', serif;
+    text-align: center; }
     @media only screen and (max-width: 37.5em) {
       .contact__text {
         position: static;
