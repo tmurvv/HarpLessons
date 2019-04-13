@@ -30,7 +30,7 @@
         <ul class="footer__topRow--contact">
             <li>
                 <a href="http://www.linkedin.com/in/tisha-murvihill-tech" target="_blank" rel="noopener">
-                    <img src="img/linkedIn.jpg" alt="linkedIn icon" class="footer__contact--linkedImage">
+                    <img src="https://res.cloudinary.com/take2tech-ca/image/upload/v1555114543/harptisha/linkedIn.jpg" alt="linkedIn icon" class="footer__contact--linkedImage">
                 </a>
             </li>
             <li>
