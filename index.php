@@ -28,7 +28,7 @@
         </div>
         <h4>Qualifications</h4>
         <p>I have a Master's degree in Music Performance from Indiana University School of Music under
-            Distinguished Professor Susann McDonald. I have been the Principal Harpist of the <a href="https://www.calgaryphil.com" target="_blank">
+            Distinguished Professor Susann McDonald. I have been the Principal Harpist of the <a href="https://www.calgaryphil.com" target="_blank" rel="noopener">
                 Calgary Philharmonic
                 Orchestra
             </a> since 1995 and have been teaching privately for many years. </p>
@@ -74,5 +74,74 @@
     <section>
         <?php include 'php/reusables/footer.php' ?>
     </section>
+    <script>
+        const images = document.querySelectorAll('img');
+        console.log(images);
+        if ('IntersectionObserver' in window) {  //Code courtesy of Chris Nwamba
+            console.log('true');
+            //function intersectOb() {
+                const options = {
+                    // If the image gets within 50px in the Y axis, start the download.
+                    root: null, // Page as root
+                    rootMargin: '0px',
+                    threshold: 0.1
+                };
+            
+                const fetchImage = (url) => {
+                    return new Promise((resolve, reject) => {
+                        const image = new Image();
+                        image.src = url;
+                        image.onload = resolve;
+                        image.onerror = reject;
+                    });
+                }
+            
+                const loadImage = (image) => {
+                    const src = image.dataset.src;
+                    fetchImage(src).then(() => {
+                        // console.log(src)
+                        image.src = src;
+                    });
+                }
+            
+                const handleIntersection = (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.intersectionRatio > 0) {
+                            observer.unobserve(entry.target);
+                            loadImage(entry.target);               
+                        }
+                    })
+                }
+            
+                // The observer for the images on the page
+                const observer = new IntersectionObserver(handleIntersection, options);   
+                images.forEach(img => {
+                    observer.observe(img);
+                    console.log('observing: ', img);
+                });    
 
+                
+        } else {
+            const fetchImage = (url) => {
+                return new Promise((resolve, reject) => {
+                    const image = new Image();
+                    image.src = url;
+                    image.onload = resolve;
+                    image.onerror = reject;
+                });
+            }
+
+            const loadImage = (image) => {
+                const src = image.dataset.src;
+                fetchImage(src).then(() => {
+                    // console.log(src)
+                    image.src = src;
+                });
+            }
+
+            images.forEach(img => {
+                loadImage(img);
+            });
+        }
+    </script>
 </body>
