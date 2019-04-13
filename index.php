@@ -24,7 +24,7 @@
             <li><a href="mailto:harp@harptisha.com">harp@harptisha.com</a> for more info</li>
         </ul>
         <div class="main__image main__image--laurentries">
-            <img src="img/laurenTriesIt.jpg" data-src= "logo.gif" alt="Lauren tries it.">
+            <img src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,h_3,w_5/v1555114546/harptisha/laurenTriesIt.jpg" data-src= "https://res.cloudinary.com/take2tech-ca/image/upload/v1555114546/harptisha/laurenTriesIt.jpg" alt="Lauren tries it.">
         </div>
         <h4>Qualifications</h4>
         <p>I have a Master's degree in Music Performance from Indiana University School of Music under
@@ -33,7 +33,7 @@
                 Orchestra
             </a> since 1995 and have been teaching privately for many years. </p>
         <div class="main__image main__image--dawn">
-            <img src="img/dawnAsksQuestion.jpg" alt="Tisha Demos for Lauren">
+            <img src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,h_3,w_5/v1555114518/harptisha/dawnAsksQuestion.jpg" data-src="https://res.cloudinary.com/take2tech-ca/image/upload/v1555114518/harptisha/dawnAsksQuestion.jpg" alt="Tisha Demos for Lauren">
         </div>
         <h4>Teaching Philosophy</h4>
         <p>I suppose the best way to describe my teaching style is relaxed and easy-going. I want the harp to be
@@ -42,23 +42,20 @@
             you on that. However, if you simply want to play at home for yourself and your friends, we can
             make that happen. Email <a href="mailto:harp@harptisha.com">harp@harptisha.com</a> for more info.</p>
         <div class="main__collage">
-            <div>
-                <!-- <div class="main__image main__image--alita">
-                    <img src="img/alitaHairFix.jpg" alt="Tisha teaches Alita">
-                </div> -->
-                <img src="img/logo.gif"
-            data-src="img/alitaHairFix.jpg"
-            alt="">
+            <div class="main__collage--col1">
+                <div class="main__image main__image--alita">
+                    <img src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,h_3,w_5/v1555114520/harptisha/alitaHairFix.jpg" data-src="https://res.cloudinary.com/take2tech-ca/image/upload/v1555114520/harptisha/alitaHairFix.jpg" alt="Tisha teaches Alita">
+                </div>
             </div>
             <div>
                 <div class="main__image main__image--karen">
-                    <img src="img/karenCentered.jpg" alt="Tisha teaches Karen">
+                    <img src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,h_3,w_5/v1555114522/harptisha/Demonstrate_Karen_Web.jpg" data-src="https://res.cloudinary.com/take2tech-ca/image/upload/v1555114522/harptisha/Demonstrate_Karen_Web.jpg" alt="Tisha teaches Karen">
                 </div>
                 <div class="main__image main__image--lauren">
-                    <img src="img/demoForLauren.jpg" alt="Tisha demos for Lauren">
+                    <img src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,h_3,w_5/v1555114521/harptisha/demoForLauren.jpg" data-src="https://res.cloudinary.com/take2tech-ca/image/upload/v1555114521/harptisha/demoForLauren.jpg" alt="Tisha demos for Lauren">
                 </div>
                 <div class="main__image main__image--skype">
-                    <img src="img/tishaSkypeDemo.jpg" alt="Tisha Demos Skype Lesson">
+                    <img src="https://res.cloudinary.com/take2tech-ca/image/upload/c_scale,h_3,w_5/v1555114552/harptisha/tishaSkypeDemo.jpg" data-src="https://res.cloudinary.com/take2tech-ca/image/upload/v1555114552/harptisha/tishaSkypeDemo.jpg" alt="Tisha Demos Skype Lesson">
                     <p>Skype Lesson</p>
                 </div>
             </div>

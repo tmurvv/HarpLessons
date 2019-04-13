@@ -346,6 +346,8 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between; }
+    .main__collage--col1 {
+      width: 100%; }
   .main__image--hands {
     width: 35%;
     height: 415px;

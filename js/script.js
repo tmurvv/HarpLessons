@@ -135,7 +135,6 @@ function intersectOb() {  //Code courtesy of Chris Nwamba
     };
 
     const fetchImage = (url) => {
-        console.log(url)
         return new Promise((resolve, reject) => {
             const image = new Image();
             image.src = url;
@@ -155,8 +154,8 @@ function intersectOb() {  //Code courtesy of Chris Nwamba
     const handleIntersection = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
-                console.log(entry.intersectionRatio);
-                loadImage(entry.target)
+                observer.unobserve(entry.target);
+                loadImage(entry.target);               
             }
         })
     }
