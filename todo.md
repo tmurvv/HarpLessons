@@ -1,5 +1,5 @@
-- merge branch
-- Finish contact form -- including connect to main menu
+
+- work on colors a little more
 - get rid of jQuery
 - get rid of extra PHP code
 

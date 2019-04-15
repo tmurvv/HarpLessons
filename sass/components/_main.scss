@@ -1,5 +1,8 @@
 .main {
     margin: 2rem;
+    @include respond(phone) {
+        margin: 1rem;
+    }
 
     &>ul {
         margin-top: 1rem;
@@ -133,5 +136,29 @@
 
     ul {
         list-style-position: inside;
+    }
+}
+
+.contactArea {
+    border: 1px solid #333;
+    border-radius: 7px;
+    margin: 50px 2rem 75px;
+    @include respond(phone) {
+        margin: 50px 1rem 75px;
+    }
+
+    &__title {
+        background-color: #f1f1f1;  
+        border-radius: 7px;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 1.3px;
+        font-weight: 600;
+        color: $colorPrimary;
+    }
+    &__text {
+        padding: 25px;
+        text-align: center;
     }
 }

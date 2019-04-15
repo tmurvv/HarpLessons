@@ -103,47 +103,50 @@
     <title>Tisha Murvihill-Contact</title>
 </head>
 <body>
-<?php include 'php/reusables/hero.php' ?>
+    
+    <?php include 'php/reusables/hero.php' ?>
 
-    <div class="contact">        
+    <div class="outerContact">
         <div class="contact__text">
             <p>Tisha Murvihill provides a relaxed, but goal-oriented atmosphere for your harp studies. She would love to hear about your harp journey whether it is years in the making or just about to begin!</p>
         </div>
-        <div class="contact__phone">
-            <p>
-                Contact Tisha below or<br>at <a href="mailto: harp@harptisha.com">harp@harptisha.com</a>
-            </p> 
-        </div>                      
-        <div class="contact__form">
-            <form action="contact.php" name='submit' method="post" id='recaptchaForm'>
-                <div class="contact__form--title">
-                    <?php if(isset($_SESSION['result'])) {echo $_SESSION['result'].'<br>'; unset($_SESSION['result']);} else {echo '<p>Contact Tisha</p>';} ?> 
-                </div>
-                
-                <div class="contact__form--userInputs">
-                    <div class="contact__form--userInputs-item">
-                        <label for="name">Name:</label>
-                        <input type="text" name='name'>
+        <div class="contact">        
+            <div class="contact__phone">
+                <p>
+                    Contact Tisha below or<br>at <a href="mailto: harp@harptisha.com">harp@harptisha.com</a>
+                </p> 
+            </div>                      
+            <div class="contact__form">
+                <form action="contact.php" name='submit' method="post" id='recaptchaForm'>
+                    <div class="contact__form--title">
+                        <?php if(isset($_SESSION['result'])) {echo $_SESSION['result'].'<br>'; unset($_SESSION['result']);} else {echo '<p>Contact Tisha</p>';} ?> 
                     </div>
-                    <div class="contact__form--userInputs-item">
-                        <label for="email">Email:</label>
-                        <input type="email" name='email'>
+                    
+                    <div class="contact__form--userInputs">
+                        <div class="contact__form--userInputs-item">
+                            <label for="name">Name:</label>
+                            <input type="text" name='name'>
+                        </div>
+                        <div class="contact__form--userInputs-item">
+                            <label for="email">Email:</label>
+                            <input type="email" name='email'>
+                        </div>
+                        <div class="contact__form--userInputs-item">
+                            <label for="phone">Phone:</label>
+                            <input type="text" name='phone' placeholder='optional'><br>
+                        </div>
+                        <label for="message">Message:</label>
+                        <textarea rows="6" name="message"></textarea><br>
+                        <!-- reCaptcha fields -->
+                        <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                        <input type="hidden" name="action" value="validate_captcha">
+                        <!-- end reCaptcha fields -->
+                        <button type='submit' name='submit'>Submit</button>
                     </div>
-                    <div class="contact__form--userInputs-item">
-                        <label for="phone">Phone:</label>
-                        <input type="text" name='phone' placeholder='optional'><br>
-                    </div>
-                    <label for="message">Message:</label>
-                    <textarea rows="6" name="message"></textarea><br>
-                    <!-- reCaptcha fields -->
-                    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
-                    <input type="hidden" name="action" value="validate_captcha">
-                    <!-- end reCaptcha fields -->
-                    <button type='submit' name='submit'>Submit</button>
-                </div>
-            </form>
-        </div>        
-                      
+                </form>
+            </div>        
+                          
+        </div>
     </div>
 
 </body>

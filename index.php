@@ -64,7 +64,7 @@
 
     <!-- Contact -->
     <section id="contact">
-        <?php include 'php/reusables/contact.php' ?>
+        <?php include 'php/reusables/contactArea.php' ?>
     </section>
     <!-- About -->
     <section id="about">

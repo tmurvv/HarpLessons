@@ -16,10 +16,10 @@
     <div class="hero__mainTitle">
 
         <h1 class="hero__mainTitle--mainHeading">
-            Tisha Murvihill
+            <span>Tisha Murvihill</span>
         </h1>
         <h2 class="hero__mainTitle--subHeading">
-            Harp Teacher <br><span>Calgary, Alberta, Canada</span>
+            <span>Harp Teacher</span> <br><span>Calgary, Alberta, Canada</span>
         </h2>
     </div>
 </div>

@@ -1,8 +1,10 @@
 .about {
     &__container {
-        width: 100%;
         background-color: #f8f8ed;
         margin: 0 2rem;
+        @include respond(phone) {
+            margin: 0;
+        }
         padding-top: 1.5rem;
         &>p {
             margin-top: 1rem;

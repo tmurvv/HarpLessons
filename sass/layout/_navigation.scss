@@ -36,6 +36,7 @@
             }
             line-height: 1;
         }
+
         &--item>a {
             margin-right: 2rem;
             color: #fff;
@@ -47,16 +48,13 @@
             }
             &:link,
             &:visited {
-                border-bottom: 1px solid transparent;
-                transition: border-bottom .4s;
+                transition: all .3s;
             }
             &:hover,
             &:active {
-                border-bottom: 1.5px solid #fff;
-                @include respond(portrait) {
-                    border-bottom: 1.5px solid $colorSecondary;
-                }
-            }
+                color: $colorPrimary-light;
+                font-size: 24px;
+            }           
         }
     }
     &__hamburger {

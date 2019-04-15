@@ -19,33 +19,32 @@
 //     }
 // }
 
+.outerContact {
+    background-image: linear-gradient(to bottom, #D0BF93, rgba(208,191,147, .15) 10%, rgba(208,191,147, 0) 100%);
+}
+
 .contact {
     border: 1px solid #333333;
     border-radius: 7px;
     margin: 75px auto;
     padding: 20px; 
     width: fit-content;
-    background-color: #e8dfcc;
+    background-color: white;
 
     &__text {
-        position: absolute;
-        color: white;
-        width: 285px;
-        top: 264px;
-        left: 50px;
-        font-size: 16px;
+        
+        color: rgb(113, 113, 113);
+        font-size: 24px;
         font-family: 'Josefin Slab', serif;
         text-align: center;
+        margin: auto;
+        padding: 50px 50px 0;
+        font-weight: 600;
         @include respond(portrait900) {
-            top: 13%;
-            left: 10%;
-            width: 40%;
+            
         }
         @include respond(phone) {
-            position: static;
-            margin: auto;
-            padding-top: 50px;
-            width: 267px;
+            
         }
     }
     &__form {
