@@ -18,6 +18,10 @@
         background-color: $colorSecondary;
         color: $colorGrey-light1;
     }
+    &__tertiary> {
+        background-color: $colorTertiary;
+        color: $colorGrey-light1;
+    }
 
     &__danger {
         background-color: $colorDanger;

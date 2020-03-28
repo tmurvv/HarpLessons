@@ -35,17 +35,10 @@
         
         color: rgb(113, 113, 113);
         font-size: 24px;
-        font-family: 'Josefin Slab', serif;
         text-align: center;
         margin: auto;
         padding: 50px 50px 0;
         font-weight: 600;
-        @include respond(portrait900) {
-            
-        }
-        @include respond(phone) {
-            
-        }
     }
     &__form {
         background-color: #fcfcfc;
@@ -104,7 +97,6 @@
     }
     &__phone {
         margin-bottom: 25px;
-        font-family: 'Josefin Slab', serif;
         font-size: 21px;
         font-weight: 600;
 

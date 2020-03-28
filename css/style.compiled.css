@@ -59,6 +59,9 @@ body {
   .btn__secondary > p {
     background-color: #D9AE5C;
     color: #fbf2ff; }
+  .btn__tertiary > {
+    background-color: #CCAC8B;
+    color: #fbf2ff; }
   .btn__danger {
     background-color: #ff3300;
     color: #fbf2ff; }
@@ -259,10 +262,10 @@ header {
   @media only screen and (max-width: 56.25em) {
     .menus__addNav--container {
       flex-flow: column;
-      justify-content: stretch;
-      padding: 5px 2px; } }
+      justify-content: stretch; } }
   @media only screen and (max-width: 37.5em) {
     .menus__addNav--container {
+      padding: 5px 7px;
       margin: 0; } }
   .menus__addNav--container-item {
     flex: 1;
@@ -521,7 +524,6 @@ header {
   .contact__text {
     color: #717171;
     font-size: 24px;
-    font-family: 'Josefin Slab', serif;
     text-align: center;
     margin: auto;
     padding: 50px 50px 0;
@@ -571,7 +573,6 @@ header {
         padding: 3px 10px; }
   .contact__phone {
     margin-bottom: 25px;
-    font-family: 'Josefin Slab', serif;
     font-size: 21px;
     font-weight: 600; }
     @media only screen and (max-width: 37.5em) {
@@ -586,3 +587,46 @@ header {
   transform-origin: 0 0;
   -webkit-transform-origin: 0 0;
   right: 0 !important; }
+
+.salesContainer {
+  margin: 0 150px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  @media only screen and (max-width: 75em) {
+    .salesContainer {
+      font-size: 85%;
+      margin: 50px; } }
+  @media only screen and (max-width: 56.25em) {
+    .salesContainer {
+      font-size: 75%;
+      height: 500px; } }
+  @media only screen and (max-width: 37.5em) {
+    .salesContainer {
+      flex-direction: column;
+      height: 100%;
+      font-size: 70%; } }
+
+.sales__image {
+  flex: 4; }
+  @media only screen and (max-width: 37.5em) {
+    .sales__image {
+      margin-bottom: 85px; } }
+
+.sales__info {
+  flex: 6;
+  text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .sales__info h3 {
+      font-size: 75%; } }
+
+.sales span {
+  font-style: italic; }
+
+#js--actualHarp {
+  width: 350px;
+  margin: 40px auto; }
+  #js--actualHarp img {
+    width: 100%; }

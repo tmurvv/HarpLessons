@@ -1,0 +1,50 @@
+.salesContainer {
+    margin: 0 150px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    @include respond(landscape) {
+        font-size: 85%;
+        margin: 50px;
+    }
+    @include respond(portrait) {
+        font-size: 75%;
+        height: 500px;
+    }
+    @include respond(phone) {
+        flex-direction: column;
+        height: 100%;
+        font-size: 70%;
+    }
+}
+
+.sales {
+    &__image {
+        flex: 4;
+        @include respond(phone) {
+            margin-bottom: 85px;
+        }
+    }
+    &__info {
+        flex: 6;
+        text-align: center;
+        @include respond(phone) {
+            & h3 {
+                font-size: 75%;
+            }
+        }   
+    }
+    & span {
+        font-style: italic;
+    }
+}
+
+#js--actualHarp {
+    width: 350px;
+    margin: 40px auto;
+    & img {
+        width: 100%;
+    }
+}

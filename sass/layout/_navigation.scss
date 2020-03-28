@@ -96,15 +96,15 @@
             display: flex;
             flex: 1;
             height: 100%;
+            padding: 5px;
             @include respond(portrait) {
                 flex-flow: column;
-                justify-content:stretch;
-                padding: 5px 2px;                            
+                justify-content:stretch;                    
             }
-            @include respond(phone) {              
-                margin: 0;              
-            }
-            padding: 5px;
+            @include respond(phone) {
+                padding: 5px 7px;           
+                margin: 0;            
+            }          
             list-style: none;
             background-color: $colorPrimary;
             width: 100%;
@@ -114,8 +114,7 @@
                 border: 1px solid $colorGrey-light1;
                 
                 @include respond(portrait) {
-                    padding: 11px 8px;
-                    
+                    padding: 11px 8px;                  
                 }
                 &>a {
                     text-decoration: none;
