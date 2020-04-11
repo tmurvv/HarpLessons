@@ -588,7 +588,7 @@ header {
   -webkit-transform-origin: 0 0;
   right: 0 !important; }
 
-.salesContainer {
+.productContainer {
   margin: 0 150px;
   height: 550px;
   display: flex;
@@ -596,33 +596,38 @@ header {
   align-items: center;
   overflow: hidden; }
   @media only screen and (max-width: 75em) {
-    .salesContainer {
+    .productContainer {
       font-size: 85%;
       margin: 50px; } }
   @media only screen and (max-width: 56.25em) {
-    .salesContainer {
+    .productContainer {
       font-size: 75%;
       height: 500px; } }
   @media only screen and (max-width: 37.5em) {
-    .salesContainer {
+    .productContainer {
       flex-direction: column;
       height: 100%;
       font-size: 70%; } }
 
-.sales__image {
+.product__image--stock {
   flex: 4; }
   @media only screen and (max-width: 37.5em) {
-    .sales__image {
+    .product__image--stock {
       margin-bottom: 85px; } }
+  .product__image--stock > img {
+    max-width: 300px;
+    max-height: 450px;
+    min-width: 150px;
+    min-height: 200px; }
 
-.sales__info {
+.product__info {
   flex: 6;
   text-align: center; }
   @media only screen and (max-width: 37.5em) {
-    .sales__info h3 {
+    .product__info h3 {
       font-size: 75%; } }
 
-.sales span {
+.product span {
   font-style: italic; }
 
 #js--actualHarp {
