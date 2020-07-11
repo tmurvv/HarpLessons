@@ -18,6 +18,9 @@
         height: 100%;
         font-size: 70%;
     }
+    & h1 {
+        font-size: 36px;
+    }
 }
 
 .product {
@@ -36,6 +39,7 @@
     &__info {
         flex: 6;
         text-align: center;
+        margin-top: 200px;
         @include respond(phone) {
             & h3 {
                 font-size: 75%;

@@ -608,6 +608,8 @@ header {
       flex-direction: column;
       height: 100%;
       font-size: 70%; } }
+  .productContainer h1 {
+    font-size: 36px; }
 
 .product__image--stock {
   flex: 4; }
@@ -622,7 +624,8 @@ header {
 
 .product__info {
   flex: 6;
-  text-align: center; }
+  text-align: center;
+  margin-top: 200px; }
   @media only screen and (max-width: 37.5em) {
     .product__info h3 {
       font-size: 75%; } }
