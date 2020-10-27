@@ -26,20 +26,6 @@
         </div>
         <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
-                <img src="img/Daphne40Nyack.jpg" alt="Salvi Daphne 40 harp">
-            </div>
-            <div class="product__info">
-                <h1 class='findaharp-title'>Salvi Pedal harp, 40 string Daphne, mahogany finish</h1>
-                <h3 class='findaharp-price'>$5500<span>usd</span></h3><h3> / $7500<span>cad</span></h3>
-                <br>
-                <br>
-                <h3 class='findaharp-shortDesc'></h3>
-                <br>
-                <p class='findaharp-longDesc'>Salvi Pedal harp, 40 string Daphne, mahogany finish. Petite pedal harp. Used however, never moved. Warm sound. $7500cad obo</p>      
-            </div>
-        </div>
-        <div class='productContainer'>
-            <div class="product product__image--stock findaharp-img">
                 <img src="img/genericHarp.png" alt="Salvi Juno Harp">
             </div>
             <div class="product__info">

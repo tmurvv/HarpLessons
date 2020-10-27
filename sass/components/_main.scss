@@ -1,3 +1,77 @@
+//COLORS
+
+//$colorPrimary: #C4977C; //LessonSite
+$colorPrimary: #7a5042; //LessonSite
+$colorPrimary-dark: #9d7964; //LessonSite
+$colorPrimary-light: #e4c2b6; //LessonSite
+$colorPrimary-veryDark: #A43C3D; //AllowanceTracker
+
+
+$colorSecondary: #D9AE5C; //AllowanceTracker
+// $colorSecondary: #fff5e7;//rgba(255,253,219,1.9);//D7DDDA;
+
+$colorTertiary: #CCAC8B; //AllowanceTracker
+$colorTertiary-light: #E2C9AF; //AllowanceTracker
+$colorTertiary-dark: #AD9068;//AllowanceTracker
+
+$colorGrey-light1: #fbf2ff; //LessonSite
+$colorGrey-light2: #eee;
+$colorGrey-light3: #ccc;
+
+$colorGrey-dark1: #777;
+// $colorGrey-dark2: #999;
+$colorGrey-dark3: #544B3E; //AllowanceTracker
+
+$colorBlack: #333;
+// $colorPaletteBlack: #310a20;
+$colorWhite: #ffffff;
+// $colorOffwhite: #f0f0ee;
+
+$colorDanger: rgb(255, 51, 0);
+
+//GRID VARIABLES
+
+$grid-width: 114rem;
+$gutter-leftright: 1rem;
+$gutter-topbott: 2rem;
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin centerBoxAbs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//MEDIA QUERIES SECTION
+//Recommended order of developing queries--base + typography > grid + page layout > components
+
+//Media query max-width settings do not refer to rems. 
+//We use ems in order to account for changes user has made in default settings
+
+@mixin respond($breakpoint) {  //1em=16px, formula (max or min-screen width) / 16px = ??ems
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content }; //600px  600px/16px (1em) = 37.5em
+    }
+    @if $breakpoint == portrait {
+        @media only screen and (max-width: 56.25em) { @content }; //900px   900px/16px (1em) = 56.25em
+    }
+    @if $breakpoint == landscape {
+        @media only screen and (max-width: 75em) { @content }; //1200px   1200px/16px (1em) = 75.5em
+    }
+    @if $breakpoint == bigScreen {
+        @media only screen and (min-width: 112.5em) { @content }; //1800+px     1800px/16px (1em) = 112.5em
+    }
+}
+
+
 .main {
     margin: 2rem;
     @include respond(phone) {
