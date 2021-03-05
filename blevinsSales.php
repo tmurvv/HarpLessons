@@ -8,7 +8,7 @@
     <?php include 'php/reusables/hero.php' ?>
 
     <div class="productsContainer">
-        <div class='productContainer'>
+        <!-- <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
                 <img src="img/blevinsharps/consort36.jpg" alt="Blevins Consort 36 Harp">
             </div>
@@ -35,7 +35,7 @@
                 <br />
                 String spacing at middle C: 15 mm</p> 
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- Contact -->
     <section id="contact">

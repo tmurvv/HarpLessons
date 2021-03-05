@@ -64,7 +64,7 @@
                 <p class='findaharp-longDesc'>Contact seller for more information on this instrument.</p>      
             </div>
         </div> -->
-        <div class='productContainer'>
+        <!-- <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
                 <img src="img/FourHarpMusic/thetroubadour-1.jpg" alt="Lyon & Healy The Troubadour, black">
             </div>
@@ -77,8 +77,8 @@
                 <br>
                 <p class='findaharp-longDesc'>Contact seller for more information on this instrument.</p>      
             </div>
-        </div>
-        <div class='productContainer'>
+        </div> -->
+        <!-- <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
                 <img src="img/FourHarpMusic/prattempressbottomside-1.jpg" alt="Pratt Princessa Harp Curly Maple">
             </div>
@@ -91,7 +91,7 @@
                 <br>
                 <p class='findaharp-longDesc'>Contact seller for more information on this instrument.</p>      
             </div>
-        </div>
+        </div> -->
         <!-- <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
                 <img src="img/FourHarpMusic/thefolkharp-1.jpg" alt="Lyon & Healy Folk Harp">
@@ -154,7 +154,7 @@
             </div>
             <div class="product__info">
                 <h1 class='findaharp-title'>Gold Lyon & Healy LH-1930s Pedal Harp</h1>
-                <h3 class='findaharp-price'>$17,000</h3>
+                <h3 class='findaharp-price'>$12,000</h3>
                 <br>
                 <br>
                 <h3 class='findaharp-shortDesc'></h3>
@@ -162,7 +162,6 @@
                 <p class='findaharp-longDesc'>Serial #3455</p>      
             </div>
         </div>
-        
     </div>
     <!-- Contact -->
     <section id="contact">

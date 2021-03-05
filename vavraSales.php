@@ -10,20 +10,6 @@
     <div class="productsContainer">
         <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
-                <img src="img/vavraharps/VavraCelticHoneySold.jpg" alt="Vavra Celtic Honey">
-            </div>
-            <div class="product__info">
-                <h1 class='findaharp-title'>Vavra, Celtic Honey, 22 strings, Cherry sold</h1>
-                <h3 class='findaharp-price'>$400<span>usd</span></h3>
-                <br>
-                <br>
-                <h3 class='findaharp-shortDesc'></h3>
-                <br>
-                <p class='findaharp-longDesc'>VAVRA Harp - Celtic Honey - CH22 - strung in nylon G3-G6, C major, Rees levers on C & F, 8" X 18" X 37", 8# 4oz, cherry with aircraft birch soundboard & back, Fender buttons & Levy's strap. $400 - sound sample at <a href="https://www.vavraharp.com/celtic-honey-22" target="_blank">https://www.vavraharp.com/celtic-honey-22</a> .  The lifetime warranty comes with this harp.</p>      
-            </div>
-        </div>
-        <div class='productContainer'>
-            <div class="product product__image--stock findaharp-img">
                 <img src="img/vavraharps/VavraCW26.jpg" alt="Vavra Celtic Wire 26 strings">
             </div>
             <div class="product__info">

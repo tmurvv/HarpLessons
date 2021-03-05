@@ -10,7 +10,7 @@
     <div class="productsContainer">
         <!-- <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
-                <img src="img/pilgrim.jpg" alt="Pilgrim 34 string Ashdown harp">
+                <img src="img/findaharp/pilgrim.jpg" alt="Pilgrim 34 string Ashdown harp">
             </div>
             <div class="product__info">
                 <h1 class='findaharp-title'>Pilgrim Ashdown, 34 strings</h1>
@@ -22,13 +22,41 @@
                 <p class='findaharp-longDesc'>Can ship to US or Canada. 1994 Pilgrim Ashdown harp made in Wales. Price reduced due to structural crack in neck. Purchase at your own risk. Beautiful, mellow, soft, sweet tone. Pilgrim levers have a reversed technology, down is engaged, up is disengaged.</p>      
             </div>
         </div> -->
+        <!-- <div class='productContainer'>
+            <div class="product product__image--stock findaharp-img">
+                <img src="img/findaharp/Korrigan38Sold.jpg" alt="Camac Korrigan 38 Lever Harp-Sold">
+            </div> -->
+            <!-- <div class="product__info">
+                <h1 class='findaharp-title'>2003 Camac Korrigan 38 Strings Mahogany</h1>
+                <h3 class='findaharp-price'>$3000<span>usd</span></h3><h3> / $3960<span>cad</span></h3>
+                <br>
+                <br>
+                <h3 class='findaharp-shortDesc'></h3>
+                <br>
+                <div class='findaharp-longDesc'>
+                    <p>Can ship to US or Canada. Contact seller to see and hear this harp played over Zoom/Skype/Facetime.</p>
+                    <ul>
+                        <li>38 strings with 1c to 6c concert tension gut string</li>
+                        <li>Mahogany colour still in great condition</li>
+                        <li>Replaced lever on 2nd octave B with Camac lever which is slightly larger than other levers</li>
+                        <li>Weighs 30 pounds</li>
+                        <li>Size 56”H x 16”W x 30”ExW</li>
+                        <li>Can be carried in padded cover with shoulder strap</li>
+                        <li>Has not been moved much</li>
+                        <li>Regularly tuned</li>
+                        <li>Has padded cover including base cover, dust cover, tuning key</li>
+                        <li>Harp strings for 2nd octave included</li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
         <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
-                <img src="img/markwood29standing.jpg" alt="Markwood 29 string wire harp">
+                <img src="img/findaharp/markwood29standing.jpg" alt="Markwood 29 string wire harp">
             </div>
             <div class="product__info">
                 <h1 class='findaharp-title'>Beautifully aged Markwood 29 string wire harp (1988) with blade levers</h1>
-                <h3 class='findaharp-price'>$1200<span>usd</span></h3><h3> / $1600<span>cad</span></h3>
+                <h3 class='findaharp-price'>$1250<span>usd</span></h3><h3> / $1600<span>cad</span></h3>
                 <br>
                 <br>
                 <h3 class='findaharp-shortDesc'>Deep, rich colour</h3>
@@ -44,25 +72,25 @@
         </div>
         <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
-                <img src="img/pierpont.jpg" alt="29-string Pierpont Irish Harp">
+                <img src="img/findaharp/pierpont.jpg" alt="29-string Pierpont Irish Harp">
             </div>
             <div class="product__info">
                 <h1 class='findaharp-title'>Craig Pierpont Irish Style 32-string Maple</h1>
-                <h3 class='findaharp-price'>$1400<span>usd</span></h3><h3> / $2000<span>cad</span></h3>
+                <h3 class='findaharp-price'>$1450<span>usd</span></h3><h3> / $2000<span>cad</span></h3>
                 <br>
                 <br>
                 <h3 class='findaharp-shortDesc'></h3>
                 <br>
                 <div class='findaharp-longDesc'>
-                    <p>Can ship to US or Canada. Contact seller to see and hear this harp played over Zoom/Skype/Facetime.</p>
+                    <p>Can ship to US or Canada. See and hear this harp on youTube <a href="https://youtu.be/yObq9N5l8bE" target="_blank">https://youtu.be/yObq9N5l8bE.</a></p>
                     <br />
-                    <p>Nice, big sound. Tuning key, cover, legs included. Legs added by first owner. An excellent instrument!!</p>
+                    <p>Nice, big sound. Fully levered. New wires. Regulated 2021. Built in the mid to late 1990s. Tuning key, cover, legs included. Legs added by first owner. An excellent instrument!!</p>
                 </div>      
             </div>
         </div>
         <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
-                <img src="img/Lindeman.jpg" alt="Charles Lindeman Gold Harp">
+                <img src="img/findaharp/Lindeman.jpg" alt="Charles Lindeman Gold Harp">
             </div>
             <div class="product__info">
                 <h1 class='findaharp-title'>Rare Charles Lindeman Harp - Gold Semi-Grand(1920s or 1930s)</h1>
@@ -80,9 +108,25 @@
                 </div>      
             </div>
         </div>
+        <div class='productContainer'>
+            <div class="product product__image--stock findaharp-img">
+                <img src="img/findaharp/hermes.jpg" alt="Salvi Hermes Harp">
+            </div>
+            <div class="product__info">
+                <h1 class='findaharp-title'>Like Brand New Salvi Hermes, 2 months old (purchased Dec 2020)</h1>
+                <h3 class='findaharp-price'>$4350<span>usd</span></h3>
+                <br>
+                <br>
+                <h3 class='findaharp-shortDesc'></h3>
+                <br>
+                <div class='findaharp-longDesc'>
+                    <div>Like Brand New Salvi Hermes 40 String Full Set Lever Harp in Mahogany. Only 2 months old. (Purchased December 2020) It has a rolling case and a full set of extra new strings. $5500CAD</div>
+                </div>      
+            </div>
+        </div>
         <!-- <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
-                <img src="img/jeffreyTriplettSierra.jpg" alt="Mahogany Sierra 36 Lever Harp">
+                <img src="img/findaharp/jeffreyTriplettSierra.jpg" alt="Mahogany Sierra 36 Lever Harp">
             </div>
             <div class="product__info">
                 <h1 class='findaharp-title'>Triplett Sierra 36 Lever Harp</h1>
@@ -96,7 +140,7 @@
         </div> -->
         <!-- <div class='productContainer'>
             <div class="product product__image--stock findaharp-img">
-                <img src="img/unknownwinset.jpg" alt="small harp, unknown maker">
+                <img src="img/findaharp/unknownwinset.jpg" alt="small harp, unknown maker">
             </div>
             <div class="product__info">
                 <h1 class='findaharp-title'>unknown maker, unknown age, Zebrawood, 25 strings, partially levered</h1>
